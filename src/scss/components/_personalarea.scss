@@ -1,0 +1,135 @@
+.personalarea {
+  &__name {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  // &__inner {
+  //   display: block;
+  // }
+
+  &__button {
+    @apply w-[320px] h-12 border rounded-[5px] border-[#969696];
+    color: black;
+    margin-top: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    float: left;
+    text-align: center;
+  }
+
+  &__button:hover {
+    @apply text-[#2888fe];
+  }
+
+  &__flex {
+    display: flex;
+    min-height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &__block {
+    padding-left: 30px;
+  }
+
+  &__post {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .personalarea {
+    &__block {
+      padding-left: 0px;
+    }
+
+    &__flex {
+      display: block;
+      min-height: 300px;
+      text-align: center;
+    }
+    &__inner {
+      margin: 0 auto;
+    }
+    &__button {
+      text-align: center;
+      margin-top: 0px;
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 250px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__button:last-child {
+      margin-right: 0px;
+    }
+    &__div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .personalarea {
+    // &__flex {
+    //   display: block;
+    //   min-height: 0px;
+    //   text-align: center;
+    // }
+
+    &__inner {
+      width: 350px;
+      margin: 0 auto;
+    }
+
+    &__button {
+      text-align: center;
+      margin-top: 0px;
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 350px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+
+    // &__button:last-child {
+    //   margin-right: 0px;
+    // }
+
+    &__div {
+      display: block;
+      width: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .personalarea {
+    &__inner {
+      width: 250px;
+      margin: 0 auto;
+    }
+
+    &__button {
+      text-align: center;
+      margin-top: 0px;
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 250px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+
+    &__div {
+      display: block;
+      width: 250px;
+    }
+  }
+}

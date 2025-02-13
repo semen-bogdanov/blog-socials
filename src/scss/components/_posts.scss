@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../variables';
+
+.posts {
+  @apply w-full mx-auto my-0 px-2.5;
+  &__line {
+    @apply h-0 mx-0 my-5 p-0 border-t-[#333] border-[none] border-t border-solid;
+  }
+  &__blog {
+    @apply w-full;
+  }
+  &__title {
+    word-break: break-all;
+    text-align: center;
+    @apply text-2xl text-[$text1] font-semibold my-[15px];
+  }
+  &__text {
+    @apply text-xl leading-normal text-justify; /* Выравнивание по ширине */
+  }
+  &__likes {
+    @apply flex mt-[15px];
+  }
+  &__like {
+    @apply w-[30px] h-[30px] cursor-pointer last:ml-5;
+  }
+  &__num {
+    @apply text-[$text1] font-semibold text-2xl justify-center ml-2.5 mt-2.5;
+  }
+  &__num2 {
+    @apply text-[$text1] font-semibold text-xl justify-center ml-2.5 mr-5 mt-[13px];
+  }
+  &__line1 {
+    @apply opacity-70 ml-[15px] border-l-[$text1] border-l border-solid;
+  }
+  &__coments {
+    @apply mt-10;
+  }
+  &__name {
+    @apply text-2xl;
+  }
+  &__coment {
+    @apply flex items-center m-[30px];
+    display: block;
+  }
+
+  &__coment1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__avatar {
+    @apply w-[60px];
+    text-align: center;
+  }
+
+  &__avatar2 {
+    @apply h-[30px] w-[60px];
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  &__block1 {
+    width: 60px;
+    margin-right: 10px;
+  }
+
+  &__write {
+    @apply block mt-[60px];
+  }
+  &__write2 {
+    @apply flex;
+  }
+  &__avatar1 {
+    @apply h-[90px] w-[90px];
+  }
+  &__textcom {
+    @apply items-center text-lg pl-[15px];
+  }
+  &__textarea {
+    @apply w-full h-20 border resize-none ml-[15px] p-2.5 rounded-[10px] border-solid border-[#969696]; /* Для хороших браузеров */
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari, Chrome */
+    -khtml-border-radius: 10px; /* KHTML */ /* CSS3 */
+  }
+  &__img1 {
+    @apply w-[70%];
+    margin: 0 auto;
+  }
+  &__div1 {
+    @apply w-[200px] h-10 ml-[90px];
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .posts {
+    &__num {
+      @apply text-xl;
+    }
+    &__num2 {
+      @apply text-base;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .posts {
+    &__num {
+      @apply text-base;
+    }
+    &__num2 {
+      @apply text-xs;
+    }
+    &__like {
+      @apply w-[25px] h-[25px] cursor-pointer last:ml-2.5;
+    }
+    &__text {
+      @apply text-sm;
+    }
+    &__textcom {
+      @apply text-sm;
+    }
+  }
+}

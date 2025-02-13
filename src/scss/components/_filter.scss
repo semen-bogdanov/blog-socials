@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../variables';
+
+// %contHeader {
+//   display: flex;
+// }
+
+// %pixel7 {
+//   margin-left: 7px;
+// }
+
+.Filter {
+  height: 100%;
+  overflow: hidden;
+  margin-left: 20px;
+  width: 340px;
+  height: 100%;
+
+  &__absolute {
+    position: absolute;
+    top: 15px;
+    background-color: white;
+    padding-left: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__close {
+    padding-left: 120px;
+    padding-bottom: 20px;
+    font-weight: 600;
+  }
+
+  &__inp {
+    @apply w-[98%] h-[57px] border pl-5 rounded-[10px] border-[#969696] border-[#dddddd];
+  }
+  &__name {
+    @apply text-xl mt-5;
+    font-family: 'Rubik-Medium';
+  }
+
+  &__recent {
+    @apply block;
+  }
+  &__blog1 {
+    @apply flex items-center my-5;
+  }
+  &__blogtext {
+    @apply block cursor-pointer ml-2.5;
+  }
+  &__blog2 {
+    @apply w-14 h-14;
+  }
+  &__blogtext2 {
+    @apply text-sm font-semibold;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 200px;
+  }
+
+  &__text1 {
+    display: flex;
+  }
+  &__cat1 {
+    @apply flex justify-between mt-5;
+  }
+  &__number {
+    @apply text-[#8d8d8d] mr-2.5;
+  }
+  &__catetext {
+    @apply text-sm cursor-pointer;
+    font-family: 'Rubik-Medium';
+  }
+  &__tag {
+    @apply h-8 border mr-2.5 mt-5 rounded-[10px] border-[#dddddd];
+  }
+  &__tag :hover {
+    @apply text-[#2888fe];
+  }
+  &__tagtext {
+    @apply w-full h-8 pt-[7px] px-2;
+  }
+  &__slider {
+    @apply w-[731px] h-[554px] overflow-hidden mt-5;
+  }
+  &__btn {
+    @apply w-[100%] h-[50px];
+    background-color: $header1;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  // второй баннер
+  &__img {
+    display: flex;
+    width: 1024px;
+    height: 550px;
+  }
+}

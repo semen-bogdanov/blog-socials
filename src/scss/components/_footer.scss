@@ -1,0 +1,88 @@
+.Footer {
+  background-color: #212121;
+  height: 410px;
+  margin-top: 140px;
+  &__logo {
+    @apply max-w-[270px] mt-24;
+  }
+  &__text1 {
+    @apply text-[white] leading-normal pt-[30px];
+  }
+
+  &__button {
+    @apply w-[120px] h-9 border rounded-[5px] border-[#969696];
+    color: white;
+    margin-top: 15px;
+  }
+  &__button:hover {
+    @apply text-[#2888fe];
+  }
+  &__blog {
+    @apply flex justify-between m-2.5;
+  }
+  &__blog2 {
+    @apply text-[white] max-w-[250px] ml-[30px] mt-[123px] first:hidden;
+  }
+  &__news {
+    @apply text-xl;
+  }
+  &__links {
+    @apply text-[white] mt-5;
+  }
+  &__menu1 {
+    @apply text-base;
+  }
+}
+
+.Footer2 {
+  background-color: #333333;
+  height: 50px;
+  &__copyright {
+    @apply flex h-[50px] items-center text-[white] pl-2.5;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .Footer {
+    &__logo {
+      @apply hidden;
+    }
+  }
+  .Footer2 {
+    &__copyright {
+      @apply justify-center text-center leading-normal p-0;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Footer {
+    &__blog2:last-child {
+      @apply hidden;
+    }
+    &__blog {
+      @apply justify-around;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Footer {
+    margin-top: 40px;
+    height: 300px;
+    &__blog2:nth-last-child(2) {
+      @apply hidden;
+    }
+    &__blog2 {
+      @apply text-center text-xl mt-10;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Footer2 {
+    &__copyright {
+      @apply p-2.5;
+    }
+  }
+}

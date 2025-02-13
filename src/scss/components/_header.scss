@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../variables';
+
+.header {
+  &__blogcont {
+    @apply mx-2.5;
+    @apply mt-[100px] flex;
+  }
+
+  &__inner {
+    @apply h-10 flex justify-end items-center;
+  }
+
+  &__in {
+    display: flex;
+    align-items: center;
+    @apply mr-[50px];
+    @apply text-sm uppercase mr-2.5 hover:text-[#a6bdd7];
+    font-family: 'Rubik-Light';
+    margin-right: 30px;
+  }
+
+  &__svg1 {
+    margin-right: 6px;
+    @apply hover:fill-[#a6bdd7];
+  }
+
+  &__svg2 {
+    margin-right: 6px;
+    @apply hover:fill-[#a6bdd7];
+  }
+
+  &__in2 {
+    margin-right: 10px;
+    font-family: 'Rubik-Light';
+    @apply text-sm uppercase mr-2.5 hover:text-[#a6bdd7];
+  }
+
+  &__in3 {
+    font-family: 'Rubik-Light';
+    @apply text-sm uppercase mr-2.5 hover:text-[#a6bdd7];
+  }
+
+  &__nav {
+    @apply h-[95px] flex items-center justify-between;
+  }
+
+  &__nav2 {
+    @apply uppercase font-semibold text-base;
+  }
+
+  &__menu1 {
+    @apply text-neutral-700 mr-[50px] last:text-neutral-700 last:mr-2.5 hover:text-[#bfbfbf];
+  }
+
+  &__blog1 {
+    margin-left: 10px;
+    @apply w-[254px] h-11;
+  }
+
+  &__logo {
+    @apply w-[250px] h-11 cursor-pointer;
+  }
+
+  &__banner {
+    @apply h-full;
+  }
+
+  &__banner1 {
+    @apply h-full max-h-[290px];
+  }
+}
+
+.nav {
+  &__burger {
+    @apply flex transition-[0.5s] fixed z-[15] ml-[15px] mr-2.5 right-0 top-[50px];
+    background: transparent;
+  }
+
+  &__burgerimg {
+    @apply w-[50px] h-[50px];
+  }
+
+  &__burgerimg4 {
+    @apply w-[45px] h-[45px];
+  }
+
+  &__burgerimg2 {
+    @apply w-5 h-5;
+  }
+
+  &__burgerMenu {
+    @apply block h-auto absolute transition-[0.5s] overflow-x-hidden z-[15] fixed mx-auto my-0 scale-100 right-0 top-[100px];
+    background: rgba(0, 59, 195, 0.8);
+  }
+
+  &__burgerMenu3 {
+    @apply block h-auto absolute transition-[0.5s] overflow-x-hidden z-[15] fixed mx-auto my-0 scale-100 right-0 top-0;
+    background: white;
+  }
+
+  &__burgerMenu4 {
+    @apply h-full transition-[0.5s] overflow-auto z-[15] relative scale-100 left-0 top-0;
+    background: white;
+  }
+
+  &__navigation {
+    @apply hidden;
+  }
+
+  &__navigation2 {
+    @apply block flex-row flex-wrap text-[white] flex text-[15px] hidden;
+  }
+  &__nav2 {
+    @apply z-[3];
+  }
+  &__menu {
+    @apply float-left clear-left ml-2.5 mt-[5px] mb-[7px];
+  }
+  &__burger {
+    @apply hidden;
+  }
+  &__burger2 {
+    @apply hidden transition-[0.5s] fixed z-[15] ml-[15px] mr-3 right-0 top-[300px];
+    background: transparent;
+  }
+  &__burger3 {
+    @apply flex transition-[0.5s] fixed z-[15] ml-[15px] mr-2.5 right-0 top-[100px];
+    background: transparent;
+  }
+  &__close {
+    @apply font-medium uppercase text-neutral-700 mr-2.5 mt-[5px];
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .header {
+    &__blog1 {
+      @apply ml-5;
+    }
+    &__filter2 {
+      @apply hidden;
+    }
+    &__blogcont {
+      @apply block;
+    }
+  }
+  .nav {
+    &__burger2 {
+      @apply flex top-[280px];
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    &__inner {
+      @apply justify-center;
+    }
+    &__nav2 {
+      @apply hidden;
+    }
+    &__nav {
+      @apply justify-center;
+    }
+    &__banner {
+      @apply hidden;
+    }
+    &__blogcont {
+      @apply mt-5;
+    }
+    &__in {
+      @apply text-lg mr-0 first:mr-[25px];
+    }
+  }
+
+  .nav {
+    &__burger {
+      @apply block;
+    }
+    &__navigation2 {
+      @apply block;
+    }
+    &__burger2 {
+      @apply top-[20px];
+    }
+    &__burgerMenu4 {
+      @apply w-full;
+      position: absolute;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    &__logo {
+      @apply w-[200px] h-10;
+    }
+    &__in {
+      @apply text-sm;
+    }
+  }
+}

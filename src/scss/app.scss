@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './components/all.scss'; // все стили
+@import './libs/normalize.scss'; // обнуляющий стиль
+@import './_variables.scss'; // переменные
+
+.container {
+  @apply w-full max-w-[1170px] overflow-hidden mx-auto my-0 p-0;
+}

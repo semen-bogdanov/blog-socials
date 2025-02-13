@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../variables';
+
+// %contHeader {
+//   display: flex;
+// }
+
+// %pixel7 {
+//   margin-left: 7px;
+// }
+
+.posts1 {
+  display: block;
+}
+
+.content {
+  &__post {
+    min-width: 800px;
+    @apply h-[470px] border-[#969696] rounded-[10px]   border border-[#dddddd];
+    margin-bottom: 40px;
+
+    // min-width: 800px;
+    max-width: 800px;
+    // height: 470px;
+    // border-color: #969696;
+    // border-radius: 20px;
+    // box-shadow: 2px 3px 3px #969696;
+    // border-color: #dddddd;
+    // border-width: 1px;
+  }
+
+  &__postnew {
+    min-width: 800px;
+    @apply h-[20px];
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
+
+  &__blog1 {
+    @apply h-[70px] border-b-[#969696] border-b;
+    border-bottom-style: solid; /* Стиль линии внизу */
+  }
+
+  &__img {
+    @apply w-full h-[280px] object-cover cursor-pointer;
+    // width: 100%;
+    // height: 280px;
+    // object-fit: cover;
+    // cursor: pointer;
+  }
+
+  &__button {
+    @apply w-[120px] h-9 border ml-[15px]  rounded-[10px] border-[#969696];
+    // width: 120px;
+    // height: 36px;
+    // border-radius: 10px;
+    // border-color: #969696;
+    // border-width: 1px;
+    // margin-left: 15px;
+    // margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding-left: 24px;
+    // padding-top: 8px;
+    color: $text1;
+  }
+
+  &__button2 {
+    @apply w-[52%]  border ml-[15px]  rounded-[10px] border-[#969696];
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text1;
+    height: 40px;
+  }
+
+  &__button:hover {
+    color: #2888fe;
+  }
+
+  &__button2:hover {
+    color: #2888fe;
+  }
+
+  &__description {
+    @apply overflow-hidden h-[53px];
+    // overflow: hidden;
+    // height: 53px;
+  }
+
+  &__text1 {
+    @apply overflow-hidden text-sm text-[#8d8d8d] pl-[15px] py-2.5;
+    font-family: 'RubikRegular';
+    // padding-left: 15px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    // overflow: hidden;
+    // font-size: 14px;
+    // font-family: 'RubikRegular';
+    // color: #8d8d8d;
+  }
+
+  &__h3 {
+    @apply text-2xl text-$text1 font-semibold ml-[15px] mt-5;
+    // font-size: 24px;
+    // color: $text1;
+    // font-weight: 600;
+    // margin-top: 20px;
+    // margin-left: 15px;
+  }
+
+  &__breadcrumbs {
+    @apply text-$searchPlaceholder text-sm font-semibold ml-[15px] mt-[5px];
+    // color: $searchPlaceholder;
+    // font-size: 14px;
+    // font-weight: 600;
+    // margin-left: 10px;
+    // margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .content {
+    &__post {
+      min-width: 100%;
+    }
+    &__postnew {
+      min-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    &__description {
+      @apply h-[43px];
+    }
+    &__button {
+      margin-top: 12px;
+    }
+    &__breadcrumbs {
+      font-size: 11px;
+    }
+  }
+}

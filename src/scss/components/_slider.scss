@@ -1,0 +1,141 @@
+@import '../variables';
+
+%wid_heig {
+  width: 70px;
+  height: 70px;
+  border: 0px;
+}
+
+.slider {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: flex;
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    overflow-x: hidden;
+  }
+
+  &__left {
+    @extend %wid_heig;
+    background-color: #343434;
+  }
+
+  &__left:hover {
+    opacity: 0.9;
+  }
+
+  &__rights {
+    @extend %wid_heig;
+    background-color: #343434;
+  }
+
+  &__rights:hover {
+    opacity: 0.9;
+  }
+
+  &__buttons {
+    display: flex;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1140px;
+    padding: 15px 15px;
+  }
+}
+
+.slick-arrow {
+  background-color: $text1 !important;
+  margin: 0 auto !important;
+}
+
+.slick-next {
+  right: 0 !important;
+  z-index: 16;
+  width: 70px !important;
+  height: 70px !important;
+  border: 0px !important;
+  background-color: $text1 !important;
+  left: 56% !important;
+  opacity: 0.4;
+}
+
+.slick-prev {
+  left: 0 !important;
+  z-index: 16;
+  width: 70px !important;
+  height: 70px !important;
+  border: 0px !important;
+  background-color: $text1 !important;
+  right: 56% !important;
+  opacity: 0.4;
+}
+
+.slick-prev:before {
+  color: transparent !important;
+  background-image: url('../../assets/slider/arr_active_2.png') !important;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slick-next:before {
+  // font-family: ;
+  color: transparent !important;
+  background-image: url('../../assets/slider/arr_active.png') !important;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slick-prev:hover {
+  opacity: 0.9;
+}
+
+.slick-next:hover {
+  opacity: 0.9;
+}
+
+.slick-dots {
+  position: absolute !important;
+  margin-bottom: 30% !important;
+
+  ul {
+    margin: -15px !important;
+  }
+}
+
+.slick-dots li {
+  background-color: white !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li button:before {
+  color: #003399 !important;
+}
+
+.slick-prev2 {
+  left: 0 !important;
+  z-index: 16;
+  position: absolute;
+  border: 0px !important;
+  top: 100px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.slick-next2 {
+  margin-left: 300px;
+  z-index: 16;
+  position: absolute;
+  border: 0px !important;
+  top: 100px;
+  cursor: pointer;
+}

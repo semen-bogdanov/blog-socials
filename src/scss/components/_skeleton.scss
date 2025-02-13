@@ -1,0 +1,18 @@
+.skeleton {
+  &__block {
+    min-width: 800px;
+    margin-bottom: 40px;
+  }
+
+  &__editor {
+    margin-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .skeleton {
+    &__block {
+      min-width: 100%;
+    }
+  }
+}

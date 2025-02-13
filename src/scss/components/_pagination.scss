@@ -1,0 +1,48 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+@import '../variables';
+
+.pagination {
+  text-align: center;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    text-align: center;
+    width: 40px;
+    line-height: 19px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid $header1;
+    border-radius: 30px;
+    margin-right: 11px;
+    cursor: pointer;
+    display: inline-block;
+    color: $header1;
+
+    &:hover {
+      background-color: $header1;
+      color: #fff;
+    }
+  }
+
+  :global {
+    .selected {
+      a {
+        background-color: $header1;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.selected {
+  a {
+    background-color: $header1;
+    color: #fff;
+  }
+}
