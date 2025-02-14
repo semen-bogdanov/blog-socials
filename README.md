@@ -8,7 +8,7 @@
 - Typescript (Душевное спокойствие 🙏🏻)
 - Sass (Styles 💅🏻)
 - Redux Toolkit
-- Material UI i
+- Material UI 
 - Clsx
 - Slick-carousel
 - React-hook-form
