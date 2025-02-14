@@ -20,6 +20,6 @@
 - Web-vitals
 - Jest
 - React-content-loader
-- react-simplemde-editor
+- React-simplemde-editor
 
  
