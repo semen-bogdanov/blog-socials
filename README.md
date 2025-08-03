@@ -1,8 +1,8 @@
 ## Социальный блог. 
-
+ 
 Стек: MERN
-### Бекенд: https://github.com/semen-bogdanov/blog-socials-backend/tree/main
-### Фронтенд:
+### Backend: https://github.com/semen-bogdanov/blog-socials-backend/tree/main
+### Frontend:
 
 - ReactJS ( Бог и спаситель ⚛︎)
 - Typescript (Душевное спокойствие 🙏🏻)
