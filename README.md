@@ -1,4 +1,4 @@
-## Социальный блог. 
+## Социальный блог
  
 Стек: MERN
 ### Backend: https://github.com/semen-bogdanov/blog-socials-backend/tree/main
